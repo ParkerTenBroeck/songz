@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name=“viewport”  initial-scale=1.0“>
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+
+        <link rel="stylesheet" href="/style/main.css">
+        <title>
+            Songz
+        </title>
+        <link rel="stylesheet" href="/style/styles.css">
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- <button onclick="bruh()">Bruh!!</button> -->
+        <div class="container">
+            <div class="play-button" id="play-pause-button">
+                <i class="play-icon fa fa-play"></i>
+                <i class="pause-icon fa fa-pause"></i>
+                <i class="stop-icon fa fa-pause"></i>
+            </div>
+            <div class="streak-counter">
+                <i class="fas fa-fire"></i> <span>🔥    </span><span id="streak-count">0</span>
+            </div>
+            <div class="progress-bar">
+                <input type="range" min="0" max="100" value="50" class="slider" id="progress-slider">
+                <input type="text" class="text-input" id ="search-input" placeholder="Enter your text here">
+                <div class="search-list" id="search-list"></div>
+            </div>
+            <p id = "correct"></p>
+        </div>
+        <script src="/src/index.js"></script>
+    </body>
+
+  <script src="/src/index.js"></script>
+
+</html>

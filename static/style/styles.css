@@ -1,0 +1,134 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Use min-height to ensure full viewport coverage */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transform: translate(0, -40%)
+}
+
+.play-button {
+    background-color: #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-icon {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.stop-icon {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.pause-icon {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.streak-counter {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.fa-fire {
+    margin-right: 5px;
+    color: #FF4500; /* Fire icon color */
+}
+
+.progress-bar {
+    width: 100%;
+}
+
+
+
+.slider {
+    width: 100%;
+    appearance: none;
+    height: 14px;
+    background: linear-gradient(to right, red 0%, red 50%, grey 50%, grey 100%);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text-input {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Add this CSS to match the existing style */
+.search-list {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Match the background color */
+    color: white; /* Match the text color */
+    border: 1px solid #333; /* Match the border color */
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%; /* Match the width */
+}
+
+.search-list-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Match the transition */
+}
+
+.search-list-item:hover {
+    background-color: #444; /* Match the hover background color */
+}
+
+.pause-icon {
+    display: none; /* Initially hide the pause icon */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1000px) {
+    .container {
+        zoom: 1.8; 
+        width: 80%; /* Adjust the container width for smaller screens */
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
